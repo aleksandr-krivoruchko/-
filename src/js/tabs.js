@@ -32,15 +32,7 @@ class Tabs {
 		if(event.target.nodeName !== 'A'){
 		return
 	}
-
-const currentItemControl = this._refs.controls.querySelector(`.${this._activeControlClass}`);
-
-
-if(currentItemControl){
-currentItemControl.classList.remove(this._activeControlClass);
-const panelId = this._getPanelId(currentItemControl);
-this._removeActivePanel(panelId)
-}
+this._removeActiveTab();
 
 event.target.classList.add(this._activeControlClass);
 const panelId = this._getPanelId(event.target);
@@ -56,6 +48,18 @@ this._setActivePanel(panelId);
 const panelId = this._getPanelId(control);
 
 this._setActivePanel(panelId);
+
+	}
+
+	_removeActiveTab(){
+		const currentItemControl = this._refs.controls.querySelector(`.${this._activeControlClass}`);
+
+if(!currentItemControl){
+	 return
+}
+currentItemControl.classList.remove(this._activeControlClass);
+const panelId = this._getPanelId(currentItemControl);
+this._removeActivePanel(panelId)
 
 	}
 

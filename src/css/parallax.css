@@ -1,0 +1,84 @@
+h1,
+h2,
+p {
+  margin: 0;
+}
+.wrapper {
+}
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.parallax {
+  position: relative;
+  height: 100%;
+}
+.parallax__mountain {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.parallax__mountain1 {
+  background-image: url(../img/m_1.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax__mountain2 {
+  z-index: 3;
+  background-image: url(../img/m_2.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 45%;
+}
+.parallax__mountain3 {
+  z-index: 3;
+  background-image: url(../img/m_3.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.parallax__fog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  background-image: url(../img/fog_1.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.content {
+  position: relative;
+}
+.content__body {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content__header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 0 20px;
+}
+.content__title {
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+.content__subtitle {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.content__article {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}

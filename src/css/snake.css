@@ -1,0 +1,25 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #eee;
+}
+.field {
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-rows: repeat(40, 1fr);
+  grid-template-columns: repeat(40, 1fr);
+  background-color: royalblue;
+}
+.snake {
+  background-color: green;
+  border: 0.25vmin solid greenyellow;
+}
+.food {
+  background-color: yellow;
+  border: 0.25vmin solid yellow;
+}
